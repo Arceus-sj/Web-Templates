@@ -1,0 +1,108 @@
+/*Specifity Order
+    Id >> Class >> Header-Type
+*/
+
+.title {
+    color: gold;
+}
+
+h3 {
+    color: blue;
+}
+
+.brother {
+    color: greenyellow;
+}
+
+#contact-us {
+    color: orangered;
+}
+ 
+
+
+
+img {
+    border: 5px solid steelblue;
+}
+
+ 
+
+
+
+
+/* Child selector where <ol> is parent and <li> are child*/
+ol > li:last-child {
+    color: chartreuse;
+} 
+
+ul > li:nth-child(2) {
+    color: slateblue;
+}
+
+/* Grouping selector 
+Syntax: A, B { Style }
+common for both A and B 
+*/
+#about-link, #about-zeus {
+    text-decoration: none;
+}
+
+
+
+
+/* 
+#about-link:link {
+    color: blue;
+}
+
+#about-link:visited {
+    color: red;
+}
+
+#about-link:hover {
+    color: yellowgreen;
+}
+
+#about-link:active {
+    color: purple;
+} */
+
+
+
+
+
+
+/*
+Adjacent selector 
+Syntax: former_element + target_element { Style properties }
+*/
+h3 + a {
+    color: palevioletred;
+}
+
+
+
+
+/*
+Sibling Selector
+*/
+textarea ~ #submit {
+    color: orangered;
+}
+
+
+
+
+/*
+Descendant Selector
+*/
+ul li {
+    color: gold;
+}
+
+
+
+
+h2[class~=subtitle] {
+    background: greenyellow;
+}
