@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seclector</title>
+    <style>
+        input {
+            display: block;
+            margin: 10px auto;
+        }
+        input[type='text'] {
+            padding: 10px;
+            border: 3px solid red;
+            border-radius: 9px;
+        }
+        input[type='submit'] {
+            width: 100px;
+            height: auto;
+            background: none;
+            border: 3px solid yellow;
+            border-radius: 9px;
+        }
+
+        li:nth-child(4) {
+            color: blue;
+        }
+        
+        li:nth-child(odd) {
+            color: white;
+            background-color: black;
+            list-style: none;
+        }
+        li:nth-child(even) {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter your password">
+        <input type="submit" value="Submit">
+    </form>
+    <ul>
+       <li id="item1">Item 1</li>
+       <li id="item2">Item 2</li>
+       <li id="item3">Item 3</li>
+       <li id="item4">Item 4</li>
+       <li id="item5">Item 5</li>
+       <li id="item6">Item 6</li>
+       <li id="item7">Item 7</li>
+       <li id="item8">Item 8</li>
+       <li id="item9">Item 9</li>
+       <li id="item10">Item 10</li>
+    </ul>
+    
+</body>
+</html>
