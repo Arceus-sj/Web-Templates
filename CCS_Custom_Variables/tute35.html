@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom variables</title>
+    <style>
+        /* root variable means we can use it globaly */
+
+        :root {
+            --box-border: 2px solid black;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .box {
+            /* for custom variable use "--" sign */
+            --box-color: #f77f00;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            margin: 5px;
+            box-shadow: 2px 3px 3px var(--box-color);
+            border: var(--box-border);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
