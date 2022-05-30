@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation & Transition</title>
+    <style>
+        body {
+            background-color: #264653;
+        }
+        .box {
+            background-color: #fffdf7;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: myAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes myAnimation {
+            0% { 
+                background-color: #fffdf7; 
+                top: 0px;
+                left: 0px;
+                border-radius: 0% 50% 50% 50%;
+            }
+            25% {
+                background-color: #A760FF; 
+                top: 0px;
+                left: 300px;
+                border-radius: 50% 0% 50% 50%;
+            }
+            50% {
+                background-color: #F47C7C; 
+                top: 300px;
+                left: 300px;
+                border-radius: 50% 50% 0% 50%;
+            }
+            75% {
+                background-color: #00FFAB; 
+                top: 300px;
+                left: 0px;
+                border-radius: 50% 50% 50% 0%;
+            }
+            100% { 
+                background-color: #fffdf7; 
+                top: 0px;
+                left: 0px;
+                border-radius: 50% 50% 50% 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
